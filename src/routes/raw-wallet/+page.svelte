@@ -39,7 +39,7 @@
     {#if keyGenerated}
   <!-- this message is ephemeral; it exists because the page was rendered in
      response to a form submission. it will vanish if the user reloads -->
-     <div class="flex flex-row-reverse"><button class="bg-gray-400 text-gray-700 shadow hover:shadow-md px-3 py-2 rounded" on:click={() => copyWIF()}>Copy</button>
+     <div class="flex flex-row-reverse"><button class="bg-gray-400 text-gray-700 shadow hover:shadow-md hover:text-slate-200 px-3 py-2 rounded" on:click={() => copyWIF()}>Copy</button>
      </div>
 {/if}
   </div>

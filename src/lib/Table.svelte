@@ -24,7 +24,7 @@
     </div>
   </div>
   <table class="min-w-full divide-y divide-gray-200">
-    <thead class="bg-gray-400">
+    <thead class="bg-yellow-500">
       <tr>
         <th
           class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider"
@@ -49,12 +49,12 @@
             <form method="POST" action="/profiles?/delete" class="inline-block">
               <input type="hidden" name="id" value={user.id} />
               <button type="submit">
-                <img class="w-4 inline" src="./trash-can.svg" alt="delete" />
+                <img class="w-7 inline hover:bg-gray-200 rounded-md p-1" src="./trash-can.svg" alt="delete" />
               </button>
             </form>
             <form method="GET" class="inline-block ml-4">
               <button type="submit" on:click={() => handleUpdate(user)}>
-                <img class="w-4 inline" src="./edit-icon.svg" alt="update" />
+                <img class="w-7 inline hover:bg-gray-200 rounded-md p-1" src="./edit-icon.svg" alt="update" />
               </button>
             </form>
           </td>
